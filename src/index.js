@@ -72,8 +72,6 @@ class PaperOnboardingContainer extends Component {
       backgroundAnimation: new Animated.Value(0),
       panResponder: PanResponder.create({
         onStartShouldSetPanResponder: () => true,
-        onStartShouldSetPanResponderCapture: () => true,
-        onMoveShouldSetResponderCapture: () => true,
         onMoveShouldSetPanResponderCapture: () => true,
         onPanResponderRelease: (e, gestureState) => {
           const { x0, y0, dx, dy } = gestureState; // eslint-disable-line object-curly-newline
